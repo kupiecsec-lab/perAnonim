@@ -1,6 +1,6 @@
 # PerAnonim
 
-Lokalna aplikacja PWA do anonimizacji polskich nazwisk w plikach DOCX, XLSX, PDF, HTML i TXT.
+Lokalna aplikacja PWA do anonimizacji polskich nazwisk i danych osobowych (PESEL, NIP, REGON, telefon, e-mail, konto bankowe, nr dokumentu, adres, data urodzenia) w plikach DOCX, XLSX, PDF, HTML i TXT.
 
 ## Uruchomienie
 
@@ -32,10 +32,12 @@ Szczegóły i procedura sprawdzenia trybu offline znajdują się w [PRIVACY.md](
 ## Obsługa
 
 1. Dodaj plik przez przeciągnięcie lub przycisk wyboru.
-2. Sprawdź listę wykrytych nazwisk.
+2. Sprawdź listę wykrytych nazwisk i danych osobowych.
 3. W razie potrzeby wpisz własne nazwiska albo wczytaj załącznik słownika TXT, PDF lub DOCX.
 4. Zaznacz potwierdzenie ręcznego przeglądu.
-5. Pobierz zanonimizowaną kopię.
+5. Pobierz zanonimizowaną kopię oraz — opcjonalnie — raport TXT z listą wykonanych zamian.
+
+Odmiany tego samego nazwiska (np. „Kowalski", „Kowalskiego") otrzymują wspólny zamiennik.
 
 Własny słownik jest zapisywany lokalnie w przeglądarce. Stary binarny format `.doc` należy wcześniej zapisać jako `.docx` lub `.txt`.
 
