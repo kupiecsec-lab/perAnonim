@@ -1,4 +1,4 @@
-const CACHE_NAME = 'peranonim-v7';
+const CACHE_NAME = 'peranonim-v8';
 const APP_FILES = [
   './',
   './index.html',
@@ -14,7 +14,18 @@ const APP_FILES = [
   './vendor/fonts/dmmono-400-latin.woff2',
   './vendor/fonts/dmmono-400-latin-ext.woff2',
   './vendor/fonts/dmmono-500-latin.woff2',
-  './vendor/fonts/dmmono-500-latin-ext.woff2'
+  './vendor/fonts/dmmono-500-latin-ext.woff2',
+  './vendor/tesseract/tesseract.min.js',
+  './vendor/tesseract/worker.min.js',
+  './vendor/tesseract/tesseract-core-simd-lstm.wasm.js',
+  './vendor/tesseract/tesseract-core-simd-lstm.wasm',
+  './vendor/tesseract/tesseract-core-lstm.wasm.js',
+  './vendor/tesseract/tesseract-core-lstm.wasm',
+  './vendor/tesseract/tesseract-core-simd.wasm.js',
+  './vendor/tesseract/tesseract-core-simd.wasm',
+  './vendor/tesseract/tesseract-core.wasm.js',
+  './vendor/tesseract/tesseract-core.wasm',
+  './vendor/tesseract/pol.traineddata'
 ];
 
 self.addEventListener('install', event => {
