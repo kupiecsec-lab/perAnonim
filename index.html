@@ -58,45 +58,6 @@ body{background-color:#f1f5f1;background-image:linear-gradient(rgba(43,122,94,.0
 @font-face{font-family:'DM Mono';font-weight:500;font-style:normal;font-display:swap;src:url('./vendor/fonts/dmmono-500-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 body{font-family:'Manrope','Segoe UI','Trebuchet MS',sans-serif}
 .brand-mark,.privacy,.eyebrow,.board-meta,.panel-label,.file-symbol,.file-size,.stat small,.finding-occ,.action-hint,.custom-status,.foot,.instruction-number,.finding-tag,.ff-btn,.dropzone strong{font-family:'DM Mono',Consolas,monospace}
-body{font-size:15px}
-.hero-copy{font-size:clamp(15px,1.2vw,16.5px)}
-.hero-note{font-size:13px}
-.privacy{font-size:11.5px}
-.board-title{font-size:15px}
-.board-meta{font-size:11px}
-.dropzone strong{font-size:16px}
-.dropzone span{font-size:13px}
-.pick{font-size:13px}
-.panel-label{font-size:10.5px}
-.file-symbol{font-size:11px}
-.file-name{font-size:14px}
-.file-size{font-size:11px}
-.stat b{font-size:26px}
-.stat small{font-size:10px}
-.finding-row{font-size:13px}
-.finding-occ{font-size:11px}
-.finding-tag{font-size:9.5px}
-.ff-btn{font-size:10.5px}
-.empty{font-size:14px}
-.control-title{font-size:13px}
-.segmented button{font-size:12px}
-.switch-line{font-size:13px}
-.custom-input{font-size:12.5px}
-.custom-apply{font-size:12px}
-.custom-clear,.custom-import{font-size:11px}
-.action-hint{font-size:11.5px}
-.primary{font-size:13px}
-.review-check{font-size:12px}
-.help-tab,.install-app{font-size:12px}
-.toast{font-size:13px}
-.foot{font-size:10.5px}
-.instruction-head h2{font-size:26px}
-.instruction-body h3{font-size:15px}
-.instruction-body p{font-size:13px}
-#previewText{font-size:12.5px}
-@media(max-width:850px){.hero-copy{font-size:15px}}
-@media(max-width:530px){.hero-copy{font-size:14px}.hero-note{font-size:12px}.dropzone strong{font-size:15px}.primary{font-size:12.5px}}
-@media(max-width:360px){.dropzone strong{font-size:14px}}
 .hero h1 em{background:linear-gradient(115deg,var(--green) 5%,#79c9a4 95%);-webkit-background-clip:text;background-clip:text;color:transparent}
 @keyframes fadeUp{from{opacity:0;transform:translateY(7px)}}
 @keyframes shimmer{to{background-position:-200% 0}}
@@ -194,6 +155,49 @@ body{background-color:#111613;background-image:linear-gradient(rgba(61,163,127,.
 #previewText{white-space:pre-wrap;word-break:break-word;font-family:'DM Mono',Consolas,monospace;font-size:11.5px;line-height:1.7;color:#40524a;margin:0;padding:14px 0}
 @media (prefers-color-scheme:dark){#previewText{color:#b9c9bf}}
 @media (prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.001s!important;transition-duration:.001s!important}}
+/* ===== typographic scale (final, wins cascade) ===== */
+body{font-size:16px}
+.brand{font-size:20px}
+.privacy{font-size:12px}
+.hero h1{font-size:clamp(40px,4.6vw,64px)}
+.hero-copy{font-size:clamp(16px,1.4vw,18px)}
+.hero-note,.hero-note strong{font-size:14px}
+.board-title{font-size:17px}
+.board-meta{font-size:12px}
+.dropzone strong{font-size:17px}
+.dropzone span{font-size:14px}
+.pick{font-size:14px}
+.panel-label{font-size:11.5px}
+.file-symbol{font-size:12px}
+.file-name{font-size:15px}
+.file-size{font-size:12px}
+.stat b{font-size:30px}
+.stat small{font-size:11px}
+.finding-row{font-size:14px}
+.finding-occ{font-size:12px}
+.finding-tag{font-size:10px}
+.ff-btn{font-size:11px}
+.empty{font-size:15px}
+.control-title{font-size:14px}
+.segmented button{font-size:13px}
+.switch-line{font-size:14px}
+.custom-input{font-size:14px}
+.custom-apply{font-size:13px}
+.custom-clear,.custom-import{font-size:12px}
+.custom-status{font-size:12px}
+.action-hint{font-size:12.5px}
+.primary{font-size:14px}
+.review-check{font-size:13px}
+.help-tab,.install-app{font-size:13px}
+.toast{font-size:14px}
+.foot{font-size:11.5px}
+.instruction-head h2{font-size:28px}
+.instruction-body h3{font-size:16px}
+.instruction-body p{font-size:14px}
+#previewText{font-size:13.5px}
+@media(max-width:850px){.hero h1{font-size:44px}.hero-copy{font-size:16px}.hero-note,.hero-note strong{font-size:13.5px}.stat b{font-size:27px}}
+@media(max-width:530px){.hero h1{font-size:38px}.hero-copy{font-size:15px}.hero-note,.hero-note strong{font-size:13px}.dropzone strong{font-size:16px}.dropzone span{font-size:13.5px}.primary{font-size:13.5px}.finding-row{font-size:13.5px}.privacy{font-size:11px}.foot{font-size:11px}.brand{font-size:18px}}
+@media(max-width:360px){.hero h1{font-size:34px}.hero-copy{font-size:14px}.dropzone strong{font-size:15px}}
 </style>
 </head>
 <body>
@@ -201,9 +205,9 @@ body{background-color:#111613;background-image:linear-gradient(rgba(61,163,127,.
 <header class="topbar"><div class="brand"><div class="brand-mark">PA</div>PerAnonim</div><div class="top-actions"><button class="install-app" id="installApp" type="button">Zainstaluj</button><div class="privacy">● LOCAL FIRST · DANE NIE OPUSZCZAJĄ URZĄDZENIA</div></div></header>
 <section class="hero"><div><p class="eyebrow">anonimizacja dokumentów / 01</p><h1>Usuń nazwiska.<br><em>Zachowaj sens.</em></h1><p class="hero-copy">Inteligentny skaner polskich nazwisk i danych osobowych dla dokumentów biurowych. Wykrywa nazwiska, numery PESEL, NIP, REGON, telefony, e-maile, konta bankowe, dowody i adresy — zamienia i eksportuje plik bez wysyłania treści do chmury.</p></div><div class="hero-note">Obsługiwane formaty<br><strong>DOCX</strong> · <strong>XLSX</strong> · <strong>PDF</strong> · <strong>HTML</strong> · <strong>TXT</strong><br><br>Anonimizacja działa w pamięci przeglądarki.</div></section>
 <section class="board"><div class="board-head"><span class="board-title">Nowe zadanie</span><span class="board-meta">KROK 01 / 02</span></div><div class="dropzone" id="dropzone"><div><div class="drop-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 16V4m0 0L8 8m4-4 4 4M5 14v4.5A1.5 1.5 0 0 0 6.5 20h11a1.5 1.5 0 0 0 1.5-1.5V14"/></svg></div><strong>Przeciągnij dokument tutaj</strong><span>albo wybierz plik z urządzenia</span><label class="pick" for="fileInput">Wybierz plik <span>↗</span></label><input id="fileInput" type="file" accept=".docx,.xlsx,.pdf,.html,.htm,.txt" multiple></div></div><div class="file-card" id="fileCard"><div class="file-symbol" id="fileType">DOCX</div><div class="file-info"><div class="file-name" id="fileName"></div><div class="file-size" id="fileSize"></div></div><button class="remove" id="removeFile" aria-label="Usuń plik">×</button></div><div class="progress" id="progress"><i></i></div></section>
-<div class="content" style="margin-top:22px"><main class="panel"><div class="stats"><div class="stat"><b id="detected">—</b><small>wykryte elementy</small></div><div class="stat"><b id="replaced">—</b><small>do zamiany</small></div><div class="stat"><b id="categories">—</b><small>kategorie danych</small></div></div><div class="panel-pad findings"><div class="panel-label">Podgląd wykryć</div><div class="findings-filter" id="findingsFilter"></div><div id="findingsList" class="empty">Wgraj plik, aby rozpocząć analizę jego zawartości.</div></div></main><aside class="panel side"><div class="side-section"><div class="control-title">Tryb wykrywania</div><div class="segmented"><button class="active" data-mode="balanced">Zbalansowany</button><button data-mode="strict">Ścisły</button></div><div class="switch-line"><span>Rozpoznawaj kontekst<br><small style="color:var(--muted)">np. „Nazwisko: Kowalski”</small></span><button class="switch on" id="contextSwitch" aria-label="Rozpoznawanie kontekstu"></button></div></div><div class="side-section"><div class="control-title">Własne nazwiska</div><div class="custom-row"><input class="custom-input" id="customNames" placeholder="np. Wiśniewski, Zając"><button class="custom-apply" id="customApply" type="button">Dodaj</button></div><div style="font-size:10px;color:var(--muted);line-height:1.5;margin-top:9px">Wpisz jedno lub kilka nazwisk oddzielonych przecinkami.</div></div></aside></div>
+<div class="content" style="margin-top:22px"><main class="panel"><div class="stats"><div class="stat"><b id="detected">—</b><small>wykryte elementy</small></div><div class="stat"><b id="replaced">—</b><small>do zamiany</small></div><div class="stat"><b id="categories">—</b><small>kategorie danych</small></div></div><div class="panel-pad findings"><div class="panel-label">Podgląd wykryć</div><div class="findings-filter" id="findingsFilter"></div><div id="findingsList" class="empty">Wgraj plik, aby rozpocząć analizę jego zawartości.</div></div></main><aside class="panel side"><div class="side-section"><div class="control-title">Tryb wykrywania</div><div class="segmented"><button class="active" data-mode="balanced">Zbalansowany</button><button data-mode="strict">Ścisły</button></div><div class="switch-line"><span>Rozpoznawaj kontekst<br><small style="color:var(--muted)">np. „Nazwisko: Kowalski”</small></span><button class="switch on" id="contextSwitch" aria-label="Rozpoznawanie kontekstu"></button></div></div><div class="side-section"><div class="control-title">Własne nazwiska</div><div class="custom-row"><input class="custom-input" id="customNames" placeholder="np. Wiśniewski, Zając"><button class="custom-apply" id="customApply" type="button">Dodaj</button></div><div style="font-size:12px;color:var(--muted);line-height:1.5;margin-top:9px">Wpisz jedno lub kilka nazwisk oddzielonych przecinkami.</div></div></aside></div>
 <div class="actionbar"><span class="action-hint" id="actionHint">Plik zostanie przetworzony lokalnie.</span><label class="review-check" id="reviewCheck"><input id="reviewConfirm" type="checkbox">Potwierdzam, że przejrzałem wykrycia i akceptuję anonimizację.</label><button class="help-tab" type="button" id="previewBtn" hidden>Podgląd</button><button class="help-tab" type="button" id="mapBtn" hidden>Mapa ↓</button><button class="help-tab" type="button" id="reportBtn" hidden>Raport ↓</button><button class="primary" id="anonymize" disabled>Zanonimizuj i pobierz <span>↓</span></button></div><footer class="foot"><span>PERANONIM / 2026</span><button class="help-tab" id="helpTab" type="button">Instrukcja obsługi <span>?</span></button><span>Bezpieczny obieg dokumentów</span></footer>
-</div><div class="instruction-backdrop" id="instructionBackdrop"></div><aside class="instruction-panel" id="instructionPanel" aria-labelledby="instructionTitle" aria-hidden="true" inert><div class="instruction-head"><div><p class="eyebrow">centrum pomocy / 02</p><h2 id="instructionTitle">Jak korzystać z PerAnonim</h2></div><button class="instruction-close" id="instructionClose" type="button" aria-label="Zamknij instrukcję">×</button></div><div class="instruction-body"><section><span class="instruction-number">01</span><div><h3>Dodaj dokument</h3><p>Przeciągnij plik do pola albo kliknij <strong>Wybierz plik</strong>. Aplikacja obsługuje DOCX, XLSX, PDF, HTML i TXT — możesz dodać kilka plików naraz (zostaną spakowane do ZIP i dostaną wspólną mapę zamienników). Dokument pozostaje w pamięci tej przeglądarki. Plik PDF jest zapisywany jako spłaszczona kopia — warstwa tekstu zostaje usunięta razem z nazwiskami. Zeskanowane strony bez warstwy tekstu są odczytywane przez lokalny OCR.</p></div></section><section><span class="instruction-number">02</span><div><h3>Wybierz tryb</h3><p><strong>Zbalansowany</strong> rozpoznaje także mniej typowe nazwiska przy imieniu. <strong>Ścisły</strong> korzysta wyłącznie z pewniejszych dopasowań ze słownika. Przełącznik kontekstu pomaga przy zapisach typu „Nazwisko: Kowalski”.</p></div></section><section><span class="instruction-number">03</span><div><h3>Sprawdź wykrycia</h3><p>Lista pokazuje każde rozpoznane nazwisko, liczbę wystąpień i zamiennik, np. <strong>OSOBA_01</strong>. Odmiany tego samego nazwiska (np. „Kowalski", „Kowalskiego") otrzymują jeden zamiennik. Wykrywane są też numery PESEL, NIP, REGON, telefony, e-maile, konta bankowe, numery dokumentów i adresy. Możesz dopisać brakujące nazwiska w polu <strong>Własne nazwiska</strong> i uruchomić analizę ponownie.</p></div></section><section><span class="instruction-number">04</span><div><h3>Zatwierdź i pobierz</h3><p>Po przejrzeniu listy zaznacz potwierdzenie audytu. Dopiero wtedy przycisk eksportu stanie się aktywny. Pobierany plik otrzyma dopisek <strong>_zanonimizowany</strong>. Przed eksportem możesz obejrzeć <strong>podgląd</strong> tekstu po zamianach. Po eksporcie dostępne są <strong>raport TXT</strong> i <strong>mapa zamienników JSON</strong> (pozwala odwrócić anonimizację).</p></div></section><section class="instruction-privacy"><span class="instruction-number">✓</span><div><h3>Prywatność i tryb offline</h3><p>PerAnonim nie wysyła dokumentów do serwera. Na GitHub Pages pobierany jest tylko kod aplikacji. Po pierwszym otwarciu PWA może działać bez internetu, jeśli Service Worker został zapisany przez przeglądarkę.</p></div></section></div></aside><div class="instruction-backdrop" id="previewBackdrop"></div><aside class="instruction-panel" id="previewPanel" aria-hidden="true" inert><div class="instruction-head"><div><p class="eyebrow">podgląd / przed pobraniem</p><h2>Podgląd anonimizacji</h2></div><button class="instruction-close" id="previewClose" type="button" aria-label="Zamknij podgląd">×</button></div><div class="instruction-body"><p style="color:var(--muted);font-size:11px;margin:14px 0 0">Tekst źródłowy po zastosowaniu zamienników. Wynikowy PDF to obraz — podgląd pokazuje warstwę tekstową.</p><pre id="previewText"></pre></div></aside><div class="toast" id="toast"></div>
+</div><div class="instruction-backdrop" id="instructionBackdrop"></div><aside class="instruction-panel" id="instructionPanel" aria-labelledby="instructionTitle" aria-hidden="true" inert><div class="instruction-head"><div><p class="eyebrow">centrum pomocy / 02</p><h2 id="instructionTitle">Jak korzystać z PerAnonim</h2></div><button class="instruction-close" id="instructionClose" type="button" aria-label="Zamknij instrukcję">×</button></div><div class="instruction-body"><section><span class="instruction-number">01</span><div><h3>Dodaj dokument</h3><p>Przeciągnij plik do pola albo kliknij <strong>Wybierz plik</strong>. Aplikacja obsługuje DOCX, XLSX, PDF, HTML i TXT — możesz dodać kilka plików naraz (zostaną spakowane do ZIP i dostaną wspólną mapę zamienników). Dokument pozostaje w pamięci tej przeglądarki. Plik PDF jest zapisywany jako spłaszczona kopia — warstwa tekstu zostaje usunięta razem z nazwiskami. Zeskanowane strony bez warstwy tekstu są odczytywane przez lokalny OCR.</p></div></section><section><span class="instruction-number">02</span><div><h3>Wybierz tryb</h3><p><strong>Zbalansowany</strong> rozpoznaje także mniej typowe nazwiska przy imieniu. <strong>Ścisły</strong> korzysta wyłącznie z pewniejszych dopasowań ze słownika. Przełącznik kontekstu pomaga przy zapisach typu „Nazwisko: Kowalski”.</p></div></section><section><span class="instruction-number">03</span><div><h3>Sprawdź wykrycia</h3><p>Lista pokazuje każde rozpoznane nazwisko, liczbę wystąpień i zamiennik, np. <strong>OSOBA_01</strong>. Odmiany tego samego nazwiska (np. „Kowalski", „Kowalskiego") otrzymują jeden zamiennik. Wykrywane są też numery PESEL, NIP, REGON, telefony, e-maile, konta bankowe, numery dokumentów i adresy. Możesz dopisać brakujące nazwiska w polu <strong>Własne nazwiska</strong> i uruchomić analizę ponownie.</p></div></section><section><span class="instruction-number">04</span><div><h3>Zatwierdź i pobierz</h3><p>Po przejrzeniu listy zaznacz potwierdzenie audytu. Dopiero wtedy przycisk eksportu stanie się aktywny. Pobierany plik otrzyma dopisek <strong>_zanonimizowany</strong>. Przed eksportem możesz obejrzeć <strong>podgląd</strong> tekstu po zamianach. Po eksporcie dostępne są <strong>raport TXT</strong> i <strong>mapa zamienników JSON</strong> (pozwala odwrócić anonimizację).</p></div></section><section class="instruction-privacy"><span class="instruction-number">✓</span><div><h3>Prywatność i tryb offline</h3><p>PerAnonim nie wysyła dokumentów do serwera. Na GitHub Pages pobierany jest tylko kod aplikacji. Po pierwszym otwarciu PWA może działać bez internetu, jeśli Service Worker został zapisany przez przeglądarkę.</p></div></section></div></aside><div class="instruction-backdrop" id="previewBackdrop"></div><aside class="instruction-panel" id="previewPanel" aria-hidden="true" inert><div class="instruction-head"><div><p class="eyebrow">podgląd / przed pobraniem</p><h2>Podgląd anonimizacji</h2></div><button class="instruction-close" id="previewClose" type="button" aria-label="Zamknij podgląd">×</button></div><div class="instruction-body"><p style="color:var(--muted);font-size:12.5px;margin:14px 0 0">Tekst źródłowy po zastosowaniu zamienników. Wynikowy PDF to obraz — podgląd pokazuje warstwę tekstową.</p><pre id="previewText"></pre></div></aside><div class="toast" id="toast"></div>
 <script src="./vendor/tesseract/tesseract.min.js"></script>
 <script src="./polish-dictionary.js"></script>
 <script>
