@@ -31,8 +31,10 @@ Szczegóły i procedura sprawdzenia trybu offline znajdują się w [PRIVACY.md](
 
 1. Dodaj plik przez przeciągnięcie lub przycisk wyboru.
 2. Sprawdź listę wykrytych nazwisk.
-3. W razie potrzeby dodaj własne nazwiska.
+3. W razie potrzeby wpisz własne nazwiska albo wczytaj załącznik słownika TXT, PDF lub DOCX.
 4. Zaznacz potwierdzenie ręcznego przeglądu.
 5. Pobierz zanonimizowaną kopię.
+
+Własny słownik jest zapisywany lokalnie w przeglądarce. Stary binarny format `.doc` należy wcześniej zapisać jako `.docx` lub `.txt`.
 
 Aplikacja jest PWA i po pierwszym wejściu przez HTTPS może działać offline dzięki Service Workerowi.
