@@ -34,6 +34,7 @@ async function makeDocx() {
 <w:p><w:r><w:t>Podpisano: Kowalskiego. Kontakt: Grzegorz Nowak</w:t></w:r></w:p>
 <w:p><w:r><w:t>Adres: ul. Miodowa 12, Warszawa</w:t></w:r></w:p>
 <w:p><w:r><w:t>PESEL 92010112350 NIP 5213641211</w:t></w:r></w:p>
+<w:p><w:r><w:t>Numer sprawy 012345678 oraz kod 111111111 nie sa telefonami.</w:t></w:r></w:p>
 <w:p><w:ins w:author="Kowalski"><w:r><w:t>zmiana</w:t></w:r></w:ins></w:p>
 </w:body></w:document>`);
   zip.file('word/numbering.xml', '<?xml version="1.0"?><w:numbering><w:num w:numId="1" w16cid:durableId="2079279205"><w:abstractNumId w:val="29"/></w:num></w:numbering>');
@@ -49,6 +50,7 @@ const test = `
   const zip = await JSZip.loadAsync(buf);
   let all='';for(const path of Object.keys(zip.files))if(/\\.(xml|rels)$/.test(path))all+=xmlTextContent(await zip.files[path].async('text'))+'\\n';
   globalThis.__findings=[...scanPii(all),...scanText(all)];
+  globalThis.__api={replaceText,activeFindings,state};
 
   // replacement na wszystkich czesciach
   for(const path of Object.keys(zip.files))if(/\\.(xml|rels)$/.test(path))zip.file(path,xmlReplace(await zip.files[path].async('text'),__findings));
@@ -73,6 +75,12 @@ const ready = eval(stubs + dict + script + test);
   ok(findings.some(f => f.original === 'Andrzej' && f.replacement === 'IMIE_01'), 'imie Andrzej -> IMIE_01');
   ok(findings.some(f => /^IMIE_\d+$/.test(f.replacement) && f.original === 'Grzegorz'), 'imie Grzegorz wykryte');
   ok(findings.some(f => f.original === '477437509'), 'telefon wykryty');
+  ok(!findings.some(f => f.original === '012345678'), 'numer od 0 -> brak TELEFON');
+  ok(!findings.some(f => f.original === '111111111'), 'wszystkie cyfry identyczne -> brak TELEFON');
+  // wykluczenie reczne (FP management)
+  const ph = findings.find(f => f.original === '477437509');
+  ok(!!ph, 'telefon znaleziony do testu wykluczenia');
+  if (ph) { ph.excluded = true; __api.state.findings = findings; const kept = __api.replaceText('tel. 477437509', __api.activeFindings()); ok(kept.includes('477437509'), 'wykluczone wykrycie nie jest zamieniane'); ok(__api.replaceText('tel. 477437509', [ph]).includes('TELEFON'), 'po przywroceniu zamieniane'); ph.excluded = false; }
   ok(findings.some(f => f.original === 'a.kowalski@urzad.gov.pl'), 'email wykryty');
   ok(findings.some(f => f.original === '92010112350' && /^PESEL/.test(f.replacement)), 'PESEL wykryty');
   ok(findings.some(f => f.original === '5213641211' && /^NIP/.test(f.replacement)), 'NIP wykryty');

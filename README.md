@@ -31,11 +31,12 @@ Szczegóły i procedura sprawdzenia trybu offline znajdują się w [PRIVACY.md](
 
 ## Obsługa
 
-1. Dodaj plik przez przeciągnięcie lub przycisk wyboru.
-2. Sprawdź listę wykrytych nazwisk i danych osobowych.
+1. Dodaj plik przez przeciągnięcie lub przycisk wyboru — możesz wrzucić **kilka plików naraz** (wyniki lądują w jednym ZIP ze wspólną mapą zamienników).
+2. Sprawdź listę wykrytych nazwisk i danych osobowych — każdy wiersz można **wykluczyć przyciskiem ×**, jeśli to fałszywe trafienie.
 3. W razie potrzeby wpisz własne nazwiska albo wczytaj załącznik słownika TXT, PDF lub DOCX.
-4. Zaznacz potwierdzenie ręcznego przeglądu.
-5. Pobierz zanonimizowaną kopię oraz — opcjonalnie — raport TXT z listą wykonanych zamian.
+4. Obejrzyj **podgląd** tekstu po zamianach (opcjonalnie).
+5. Zaznacz potwierdzenie ręcznego przeglądu.
+6. Pobierz zanonimizowaną kopię oraz — opcjonalnie — raport TXT z listą wykonanych zamian i **mapę zamienników JSON** (pozwala odwrócić anonimizację).
 
 Odmiany tego samego nazwiska (np. „Kowalski", „Kowalskiego") otrzymują wspólny zamiennik. Imiona stojące obok wykrytych nazwisk są maskowane tokenem `IMIE_XX` o numerze zgodnym z nazwiskiem (`IMIE_01 OSOBA_01` to ta sama osoba).
 
