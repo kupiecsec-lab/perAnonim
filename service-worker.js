@@ -1,4 +1,4 @@
-const CACHE_NAME = 'peranonim-v6';
+const CACHE_NAME = 'peranonim-v7';
 const APP_FILES = [
   './',
   './index.html',
@@ -8,7 +8,13 @@ const APP_FILES = [
   './vendor/jszip.min.js',
   './vendor/xlsx.full.min.js',
   './vendor/pdf.min.mjs',
-  './vendor/pdf.worker.min.mjs'
+  './vendor/pdf.worker.min.mjs',
+  './vendor/fonts/manrope-400-latin.woff2',
+  './vendor/fonts/manrope-400-latin-ext.woff2',
+  './vendor/fonts/dmmono-400-latin.woff2',
+  './vendor/fonts/dmmono-400-latin-ext.woff2',
+  './vendor/fonts/dmmono-500-latin.woff2',
+  './vendor/fonts/dmmono-500-latin-ext.woff2'
 ];
 
 self.addEventListener('install', event => {
