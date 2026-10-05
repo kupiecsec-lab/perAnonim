@@ -1,6 +1,6 @@
 # PerAnonim
 
-Lokalna aplikacja PWA do anonimizacji polskich nazwisk w plikach DOCX, XLSX, HTML i TXT.
+Lokalna aplikacja PWA do anonimizacji polskich nazwisk w plikach DOCX, XLSX, PDF, HTML i TXT.
 
 ## Uruchomienie
 
@@ -23,7 +23,9 @@ GitHub może potrzebować kilku minut na pierwsze wdrożenie.
 
 ## Prywatność
 
-Dokumenty są analizowane lokalnie w przeglądarce. Biblioteki DOCX/XLSX i słownik są zapisane w repozytorium, więc aplikacja nie korzysta z CDN ani zewnętrznego API.
+Dokumenty są analizowane lokalnie w przeglądarce. Biblioteki DOCX/XLSX/PDF i słownik są zapisane w repozytorium, więc aplikacja nie korzysta z CDN ani zewnętrznego API.
+
+Pliki PDF są anonimizowane przez spłaszczenie stron do obrazu z zasłoniętymi nazwiskami — warstwa tekstu, metadane i załączniki nie przechodzą do pliku wynikowego.
 
 Szczegóły i procedura sprawdzenia trybu offline znajdują się w [PRIVACY.md](PRIVACY.md).
 

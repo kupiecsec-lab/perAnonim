@@ -4,7 +4,7 @@ PerAnonim przetwarza zawartość dokumentów lokalnie w przeglądarce. Pliki uż
 
 ## Tryb offline
 
-Aplikacja nie korzysta podczas pracy z CDN, Google Fonts, analityki ani zewnętrznego API. Biblioteki wymagane do DOCX i XLSX znajdują się lokalnie w katalogu `vendor/`.
+Aplikacja nie korzysta podczas pracy z CDN, Google Fonts, analityki ani zewnętrznego API. Biblioteki wymagane do DOCX, XLSX i PDF znajdują się lokalnie w katalogu `vendor/`.
 
 Można uruchomić aplikację bez internetu po pobraniu repozytorium i otworzeniu `index.html`.
 
