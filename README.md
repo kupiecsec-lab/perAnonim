@@ -15,10 +15,9 @@ Możesz też pobrać repozytorium i otworzyć `index.html` lokalnie.
 1. Wejdź do repozytorium `kupiecsec-lab/perAnonim`.
 2. Otwórz **Settings**.
 3. W menu po lewej wybierz **Pages**.
-4. W sekcji **Build and deployment** wybierz **Deploy from a branch**.
-5. Ustaw branch `main` oraz katalog `/ (root)`.
-6. Kliknij **Save**.
-7. Po zakończeniu publikacji otwórz adres `https://kupiecsec-lab.github.io/perAnonim/`.
+4. W sekcji **Build and deployment** ustaw **Source: GitHub Actions**.
+5. Workflow `Deploy PerAnonim to GitHub Pages` uruchomi się automatycznie po każdym pushu do `main`.
+6. Po zakończeniu publikacji otwórz adres `https://kupiecsec-lab.github.io/perAnonim/`.
 
 GitHub może potrzebować kilku minut na pierwsze wdrożenie.
 
