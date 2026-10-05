@@ -1,0 +1,13 @@
+{
+  "name": "PerAnonim",
+  "short_name": "PerAnonim",
+  "description": "Lokalna anonimizacja dokumentów i polskich nazwisk.",
+  "lang": "pl",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f1f5f1",
+  "theme_color": "#17231f",
+  "icons": [
+    {"src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}
+  ]
+}
