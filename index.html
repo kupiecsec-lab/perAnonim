@@ -201,6 +201,12 @@ body{font-size:16px}
 .qr-card{display:inline-flex;flex-direction:column;align-items:center;gap:10px;margin-top:12px;padding:16px 18px 13px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 6px 18px rgba(23,58,44,.08)}
 .qr-card svg{display:block}
 .qr-url{font-family:'DM Mono',Consolas,monospace;font-size:11.5px;color:#5a6b61;letter-spacing:.02em}
+.pick{background:linear-gradient(135deg,#1e5d47,#2b7a5e 55%,#35a07b);color:#f4fbf6;padding:14px 22px;border-radius:11px;box-shadow:0 10px 26px rgba(30,93,71,.30),inset 0 1px 0 rgba(255,255,255,.18);letter-spacing:.01em;transition:transform .18s ease,box-shadow .18s ease,filter .18s ease}
+.pick:hover{background:linear-gradient(135deg,#1e5d47,#2b7a5e 55%,#35a07b);transform:translateY(-1px);box-shadow:0 14px 32px rgba(30,93,71,.36),inset 0 1px 0 rgba(255,255,255,.22);filter:brightness(1.06)}
+.pick:active{transform:translateY(0);box-shadow:0 6px 16px rgba(30,93,71,.28)}
+.pick svg{width:15px;height:15px}
+@media (prefers-color-scheme:dark){.pick{background:linear-gradient(135deg,#2f9c73,#52b890);color:#0c1712;box-shadow:0 10px 26px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.25)}.pick:hover{background:linear-gradient(135deg,#36ad80,#5ec698);box-shadow:0 14px 34px rgba(0,0,0,.45),0 0 0 1px rgba(110,220,175,.25),inset 0 1px 0 rgba(255,255,255,.3);filter:none}}
+
 .actionbar{flex-wrap:wrap;gap:12px;justify-content:flex-start}
 .action-tools{display:flex;gap:10px;flex-wrap:wrap}
 .review-check{max-width:none;flex:none;justify-content:center;padding:12px 16px;box-sizing:border-box;white-space:nowrap}
