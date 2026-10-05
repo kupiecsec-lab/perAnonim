@@ -28,7 +28,7 @@
       return xml.replace(/<w:p[ >]/g, '\n<w:p ').replace(/<[^>]+>/g, ' ');
     }
     if (type === 'pdf') {
-      const pdf = await pdfjsLib.getDocument({data: await file.arrayBuffer()}).promise;
+      const pdf = await pdfjsLib.getDocument({data: await file.arrayBuffer(), isEvalSupported: false}).promise;
       let text = '';
       for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber++) {
         const page = await pdf.getPage(pageNumber);

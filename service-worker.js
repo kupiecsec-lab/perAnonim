@@ -1,4 +1,4 @@
-const CACHE_NAME = 'peranonim-v4';
+const CACHE_NAME = 'peranonim-v5';
 const APP_FILES = [
   './',
   './index.html',
@@ -7,8 +7,8 @@ const APP_FILES = [
   './polish-dictionary.js',
   './vendor/jszip.min.js',
   './vendor/xlsx.full.min.js',
-  './vendor/pdf.min.js',
-  './vendor/pdf.worker.min.js'
+  './vendor/pdf.min.mjs',
+  './vendor/pdf.worker.min.mjs'
 ];
 
 self.addEventListener('install', event => {

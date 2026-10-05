@@ -25,7 +25,7 @@ GitHub może potrzebować kilku minut na pierwsze wdrożenie.
 
 Dokumenty są analizowane lokalnie w przeglądarce. Biblioteki DOCX/XLSX/PDF i słownik są zapisane w repozytorium, więc aplikacja nie korzysta z CDN ani zewnętrznego API.
 
-Pliki PDF są anonimizowane przez spłaszczenie stron do obrazu z zasłoniętymi nazwiskami — warstwa tekstu, metadane i załączniki nie przechodzą do pliku wynikowego.
+Pliki PDF są anonimizowane przez spłaszczenie stron do obrazu z zasłoniętymi nazwiskami — warstwa tekstu, metadane i załączniki nie przechodzą do pliku wynikowego. W DOCX i XLSX anonimizowane są również metadane (autor, komentarze, osoby, nazwy arkuszy), a miniatury dokumentów są usuwane.
 
 Szczegóły i procedura sprawdzenia trybu offline znajdują się w [PRIVACY.md](PRIVACY.md).
 
