@@ -1,4 +1,4 @@
-const CACHE_NAME = 'peranonim-v10';
+const CACHE_NAME = 'peranonim-v11';
 const APP_FILES = [
   './',
   './index.html',
